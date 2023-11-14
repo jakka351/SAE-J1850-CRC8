@@ -35,7 +35,7 @@ void CRC8::begin(void) {
 
 crc CRC8::get_crc8(uint8_t const message[], int nBytes) {
    uint8_t data;
-    crc remainder = 0;
+    crc remainder = 0xFF;
 
 
     for (int byte = 0; byte < nBytes; ++byte)
